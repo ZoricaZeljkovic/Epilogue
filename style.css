@@ -2,7 +2,60 @@
 :root {
     --fontFamily: 'Source Sans Pro', sans-serif;
     --logo: 'Pacifico', cursive;
+    --fontSize: 16px;
+    --white: #fff;
+    --red: #EF6480;
+    --transition: .3s ease;
+}
+/* basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: var(--fontFamily);
+    font-size: var(--fontSize);
 }
+/* header */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(images/banner.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    font-family: var(--logo);
+    font-size: 5rem;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+header .underline {
+    width: 35%;
+    height: 2px;
+    background: var(--white);
+    margin: 10px auto 50px;
+}
+header p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: .7;
+    letter-spacing: 4px;
+}
+header p a {
+    text-decoration: none;
+    color: var(--white);
+    opacity: .7;
+    transition: var(--transition);   
+}
+header p a:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
+
