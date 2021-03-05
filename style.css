@@ -119,5 +119,61 @@ header p a:hover {
     font-size: 1.4rem;
     padding-bottom: 30px;
 }
+/* blog */
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog article {
+    flex: 0 0 48%;
+    margin-bottom: 60px;
+}
+.blog article .holder {
+    overflow: hidden;
+}
+.blog .holder a {
+    display: block;
+    transition: var(--transition);
+}
+.blog .holder a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.blog article .featured-image {
+    position: relative;
+}
+.blog article .featured-image img {
+    width: 100%;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    opacity: 1.5;
+    
+}
+.blog article .featured-image img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.featured-image h3 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-shadow: 0 0 3px black	;
+}
+.blog article .text {
+    padding: 80px;
+    background: var(--white);
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+}
+.blog article .text p {
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+}
 
 
