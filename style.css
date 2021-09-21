@@ -192,6 +192,9 @@ footer i {
     color: var(--text);
     margin:0 10px
 }
+footer i:hover {
+    color: var(--red);
+}
 footer .copy {
     margin: 80px 0;
     color: var(--text);
